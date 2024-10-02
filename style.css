@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?books,classroom') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#content {
+    text-align: center;
+    background: linear-gradient(45deg, red, blue); /* Gradient from red to blue */
+    padding: 20px 40px;
+    border-radius: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+    animation: fadeInText 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.top{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.bottom{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.top, .bottom {
+    font-size: 50px; /* Increase the size of the emojis */
+}
+
